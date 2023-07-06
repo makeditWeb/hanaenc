@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header id="nav-menu" aria-label="navigation bar">
+        <div class="container">
+            <div class="nav-start">
+                <a class="logo" href="/">
+                    <img src="https://github.com/Evavic44/responsive-navbar-with-dropdown/blob/main/assets/images/logo.png?raw=true"
+                        width="35" height="35" alt="Inc Logo" />
+                </a>
+    
+            </div>
+    
+    
+
+            <div class="nav-end">
+                <nav class="menu">
+                    <ul class="menu-bar">
+                        <li>
+                            <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true"
+                                aria-expanded="false" aria-label="discover">
+                                ABOUT
+                            </button>
+                            <div id="dropdown1" class="dropdown">
+                                <ul role="menu">
+                                    <li>
+                                        <span class="dropdown-link-title">Browse Categories</span>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#branding">Branding</a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#illustrations">Illustration</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="nav-link" href="/">PORTFOLIO</a></li>
+                        <li><a class="nav-link" href="/">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+                    <i class="bx bx-menu" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+</body>
+
+<script src="./js/main.js"></script>
+</html>

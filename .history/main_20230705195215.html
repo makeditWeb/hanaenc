@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <header id="nav-menu" aria-label="navigation bar">
+        <nav>
+            <div class="wrapper">
+                <a class="logo" href="/">
+                    <img src="./image/logo_b.png" alt="Logo" />
+                </a>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li><a href="#">About</a></li>
+                    <li><a class="nav-link" href="/">PORTFOLIO</a></li>
+                    <li><a class="nav-link" href="/">CONTACT</a></li>
+                    <li>
+                        <a href="#" class="desktop-item">About</a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">About</label>
+                        <ul class="drop-menu">
+                            <li><a href="#">회사소개 및 연혁</a></li>
+                            <li><a href="#">사업분야</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">인증현황</a></li>
+                        </ul>
+                    </li>
+                    <li class="download_wrap">
+                        <p>지명원</p>
+                        <img src="./image/navbar_down_w.png">
+                    </li>
+                </ul>
+                
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="main">
+        <div class="main-slide-wrap">
+            <div class="main-slide">
+                <img src="./image/main_slide1.jpg" alt="slide1">
+                <p class="slide_title">01. 김천시 부곡동 514번지 (김천부곡아파트)</p>
+            </div>
+            <div class="main-slide">
+                <img src="./image/main_slide2.jpg" alt="slide1">
+                <p class="slide_title">01. 김천시 부곡동 514번지 (김천부곡아파트)</p>
+            </div>
+            <div class="main-slide">
+                <img src="./image/main_slide3.jpg" alt="slide1">
+                <p class="slide_title">01. 김천시 부곡동 514번지 (김천부곡아파트)</p>
+            </div>
+            <div class="main-slide">
+                <img src="./image/main_slide4.jpg" alt="slide1">
+                <p class="slide_title">01. 김천시 부곡동 514번지 (김천부곡아파트)</p>
+            </div>
+            <div class="main-slide">
+                <img src="./image/main_slide5.jpg" alt="slide1">
+                <p class="slide_title">01. 김천시 부곡동 514번지 (김천부곡아파트)</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.main-slide-wrap').slick({
+            infinite: true,
+            slidesToShow: 1,
+            dots: true,
+            arrows:false,
+        });
+    });
+</script>
+</html>
